@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: skyblue;
+  font-family:Arial, sans-serif;
+}
+.listWrapper {
+  margin: 30px auto;
+  width: 700px;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 10px 15px 50px;
+  background-color: whitesmoke;
+  font-size: 16px;
+  transition: 0.5s;
+  margin-bottom: 5px;
+  text-align: justify;
+  list-style-type: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+ul li:nth-child(odd) {
+  background-color:peachpuff;
+}
+
+ul li:nth-child(even) {
+  color: black;
+}
+
+ul li.checked {
+  background:crimson;
+  color: white;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border: solid rgb(31, 3, 9);
+  border-width: 0 3px 3px 0;
+  top: 15px;
+  left: 20px;
+  transform: rotate(50deg);
+  height: 20px;
+  width: 10px;
+  
+  
+}
+
+.removeBtn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  padding: 12px 15px 12px 15px;
+  margin: 0 5px 5px 0;
+  border: 2px;
+}
+
+.removeBtn:hover {
+  background-color:palevioletred;
+  color: aliceblue;
+}
+
+.chores {
+  padding: 40px 50px;
+  color: whitesmoke;
+  text-align: center;
+  
+}
+
+.chores:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size-adjust: inherit;
+  color: #000000;
+}
+
+.feedbackwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.userfeedback {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.addfeedbackBtn {
+  padding: 15px;
+  width: 20%;
+  background-color:grey;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0;
+}
+
+.addfeedbackBtn:hover {
+  background-color:goldenrod;
+  color: whitesmoke;
+}
+
+@media (max-width:480px) {
+  .toDoList {
+      width: 100%;
+      
+  }
+
+  h1 {
+      font-size: 14px;
+  }
+
+  .userfeedback{
+      width: 80%;
+      height: 40px;
+      font-size: 12px;
+  }
+
+  span {
+      width: 20%;
+      font-size: 12px;
+  }
+
+  ul li {
+      width: 90%;
+      height: 40px;
+      font-size: 12px;
+      text-align: justify;
+      list-style-type: none;
+      margin-left: 20px;
+
+  }
+
+  .ulContainer {
+      width: 100%;
+  }
+
+  .listWrapper {
+      margin: 30px auto;
+      width: 380px;
+  }
+  
+  ul li.checked::before {
+      content: "";
+      position: absolute;
+      border: solid blue;
+      border-width: 0 2px 2px 0;
+      top: 8px;
+      left: 20px;
+      transform: rotate(50deg);
+      height: 20px;
+      width: 10px;
+  
+      
+      
+  }
+  
+
+
+
+}

@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Activities</title>
+    <link rel="stylesheet" href="../CSS/index2.css">
+ 
+  </head>
+    <body>
+      <div class="listWrapper">
+        <div class="chores" id="chores">
+          <h1>My Todo List</h1>
+          <div class="feedbackwrapper">
+            <input type="text" class="userfeedback" placeholder="My chores..."/>
+            <span onclick="addElement()" class="addfeedbackBtn">Add</span>
+          </div>
+        </div>
+        <div class="activitycontainer">
+          <ul id="myactivities">
+            <li>
+              Wake up
+            <span><button class="removeBtn">Remove</button></span>
+            </li>
+            <li class="checked">
+              Pray
+              <span><button class="removeBtn">Remove</button></span>
+            </li>
+            <li>
+              Recite daily duas
+              <span><button class="removeBtn">Remove</button></span>
+            </li>
+            <li>
+              Prepare breakfast
+             <span><button class="removeBtn">Remove</button></span>
+            </li>
+            <li>
+              Bath and get ready for 
+              <span><button class="removeBtn">Remove</button></span>
+            </li>
+            <li>
+              Prepare lunch
+              <span><button class="removeBtn">Remove</button></span>
+            </li>
+            <li>
+              Revise what was taught in school
+              <span><button class="removeBtn">Remove</button></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script src="index2.js"></script>
+    </body>
+  </html>
+
